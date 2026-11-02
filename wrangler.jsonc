@@ -6,6 +6,6 @@
   "d1_databases": [
     { "binding": "DB", "database_name": "buildbyte-db", "database_id": "5f52cb04-84b5-46ba-93eb-f88ef7d0a0d5" }
   ],
-  // Custom domain: uncomment after buildbyte.buzz is on your Cloudflare account
+  // Cust om domain: uncomment after buildbyte.buzz is on your Cloudflare account
   // "routes": [{ "pattern": "buildbyte.buzz", "custom_domain": true }, { "pattern": "www.buildbyte.buzz", "custom_domain": true }]
 }
