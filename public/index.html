@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buildbyte: websites built and deployed free with AI</title>
+  <meta name="description" content="Describe a website. Buildbyte builds it and deploys it for free. Coming soon.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <main>
+    <header class="glass bar">
+      <strong>buildbyte<span>.buzz</span></strong>
+      <span class="status">Coming soon</span>
+    </header>
+
+    <section class="hero">
+      <h1>Say what you want.<br>We ship the site.</h1>
+      <p>Buildbyte uses AI to build your website from a short description, then deploys it for free. Join the list to get in first.</p>
+
+      <form id="signup" class="glass form" novalidate>
+        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email" required>
+        <button type="submit">Get early access</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="steps">
+      <article class="glass tilt"><h2>Describe it</h2><p>A sentence is enough. “A site for my bakery with a menu and a map.”</p></article>
+      <article class="glass tilt"><h2>Build it</h2><p>AI writes the pages, styles and code. You edit anything in plain words.</p></article>
+      <article class="glass tilt"><h2>Deploy it free</h2><p>One click puts it on a fast global network, on your own domain.</p></article>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

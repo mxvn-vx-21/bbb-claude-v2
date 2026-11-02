@@ -1,0 +1,11 @@
+{
+  "name": "buildbyte",
+  "main": "src/worker.ts",
+  "compatibility_date": "2025-01-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "buildbyte-db", "database_id": "REPLACE_WITH_ID_FROM_wrangler_d1_create" }
+  ],
+  // Custom domain: uncomment after buildbyte.buzz is on your Cloudflare account
+  // "routes": [{ "pattern": "buildbyte.buzz", "custom_domain": true }, { "pattern": "www.buildbyte.buzz", "custom_domain": true }]
+}

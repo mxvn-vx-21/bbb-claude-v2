@@ -1,0 +1,20 @@
+{
+  "name": "buildbyte-coming-soon",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/client/main.ts --bundle --minify --format=esm --outfile=public/main.js",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "db:init": "wrangler d1 execute buildbyte-db --file=schema.sql",
+    "db:init:remote": "wrangler d1 execute buildbyte-db --remote --file=schema.sql"
+  },
+  "dependencies": { "three": "^0.170.0" },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "@types/three": "^0.170.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.90.0"
+  }
+}
